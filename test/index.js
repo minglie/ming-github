@@ -1,15 +1,11 @@
-# ming-github
-github客户端
+
+const Github = require('../src/github/Github.js');
 
 
 
-https://segmentfault.com/a/1190000015144126?utm_source=tag-newest
+github=new Github({token:"xxx",username: 'minglie'});
 
-```javascript
 
-const Github = require('ming-github');
-
-github=new Github({token:"xxxxxxxxxxx",username: 'minglie'});
 
 
 /**
@@ -73,7 +69,7 @@ github.test("ming_node").then(d=>console.log(d.data),e=>console.log(e))
 /**
  * 创建新文件 Create content
  */
-if(0)
+if(1)
 github.createContent("ming_node","/wang/a3.js","网朋sdfsdf飞").then(d=>console.log(d.data.commit.sha),e=>console.log(e))
 
 
@@ -149,5 +145,3 @@ github.updateComment("ming_node", "493643757","VWBBB").then(d=>console.log(d.dat
  */
 if(0)
 github.deleteComment("ming_node", "493643757").then(d=>console.log(d.data),e=>console.log(e))
-
- ```
