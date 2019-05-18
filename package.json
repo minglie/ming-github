@@ -1,8 +1,8 @@
 {
   "name": "ming-github",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "github客户端",
-  "main": "index.js",
+  "main": "src/github/Github.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
