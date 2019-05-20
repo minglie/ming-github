@@ -93,7 +93,7 @@ const querystring = require('querystring');
      /**
       * 获取某文件的原始内容
       */
-     async fileContents(reposName,path="") {
+     async fileContents(reposName,path="",branch="master") {
          return this.fetch({
              url: `https://raw.githubusercontent.com/${this.options.username}/${reposName}/${branch}${path}`
          });

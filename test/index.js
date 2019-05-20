@@ -11,7 +11,7 @@ github=new Github({token:"xxx",username: 'minglie'});
 /**
  * 个人主要信息
  */
-if(1)
+if(0)
 github.getUser().then(d=>console.log(d.data))
 
 
@@ -39,7 +39,7 @@ github.reposContents("ming_node","/a3.js").then(d=>console.log(d.data))
 /**
  * 获取某文件的原始内容
  */
-if(0)
+if(1)
 github.fileContents("ming_node","/index.js").then(d=>console.log(d.data))
 
 
@@ -69,7 +69,7 @@ github.test("ming_node").then(d=>console.log(d.data),e=>console.log(e))
 /**
  * 创建新文件 Create content
  */
-if(1)
+if(0)
 github.createContent("ming_node","/wang/a3.js","网朋sdfsdf飞").then(d=>console.log(d.data.commit.sha),e=>console.log(e))
 
 
