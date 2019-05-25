@@ -1,6 +1,6 @@
 {
   "name": "ming-github",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "github客户端",
   "main": "src/github/Github.js",
   "scripts": {

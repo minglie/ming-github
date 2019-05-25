@@ -3,7 +3,7 @@ const Github = require('../src/github/Github.js');
 
 
 
-github=new Github({token:"xxx",username: 'minglie'});
+github=new Github({token:"2ff060ad1f68fd0a16beb73e608c3853da472737",username: 'minglie'});
 
 
 
@@ -39,7 +39,7 @@ github.reposContents("ming_node","/a3.js").then(d=>console.log(d.data))
 /**
  * 获取某文件的原始内容
  */
-if(1)
+if(0)
 github.fileContents("ming_node","/index.js").then(d=>console.log(d.data))
 
 
@@ -69,8 +69,8 @@ github.test("ming_node").then(d=>console.log(d.data),e=>console.log(e))
 /**
  * 创建新文件 Create content
  */
-if(0)
-github.createContent("ming_node","/wang/a3.js","网朋sdfsdf飞").then(d=>console.log(d.data.commit.sha),e=>console.log(e))
+if(1)
+github.createContent("ming_node","/wang/a7.js","娃撒大事").then(d=>console.log(d.data.commit.sha),e=>console.log(e))
 
 
 
@@ -79,7 +79,7 @@ github.createContent("ming_node","/wang/a3.js","网朋sdfsdf飞").then(d=>consol
  * 更新文件 Update content
  */
 if(0)
-github.updateContent("ming_node","/wang/a3.js","段舍得坊").then(d=>console.log(d.data.commit.sha),e=>console.log(e))
+github.updateContent("ming_node","/wang/a6.js","娃撒大事").then(d=>console.log(d.data.commit.sha),e=>console.log(e))
 
 
 /**

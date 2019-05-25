@@ -1,0 +1,1 @@
+a=Buffer.from("aaa").toString('base64')console.log(a)

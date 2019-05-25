@@ -2,14 +2,50 @@
 github客户端
 
 
-
+参考文档地址
 https://segmentfault.com/a/1190000015144126?utm_source=tag-newest
+
+
+
+#1. 普通页面使用ming-github
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://minglie.github.io/js//M_github.js"></script>
+<body>
+
+<button id="btn">执行</button>
+<script>
+    github=new Github({token:"2ff060ad1f68fd0a16beb73e608c3853da472737",username: 'minglie'});
+    btn.onclick=async function () {
+     //  github.reposListAll().then(d=>console.log(d))
+      //  github.fileContents("ming_node","/index.js").then(d=>console.log(d))
+       // github.createContent("ming_node","/wang/a14.js","网朋飞").then(d=>console.log(d),e=>console.log(e))
+        github.updateContent("ming_node","/wang/a14.js","QQQQQQQQ").then(d=>console.log(d.commit.sha),e=>console.log(e))
+
+    }
+
+
+</script>
+
+</body>
+</html>
+```
+
+
+#2. node环境使用ming_github
 
 ```javascript
 
 const Github = require('ming-github');
 
-github=new Github({token:"xxxxxxxxxxx",username: 'minglie'});
+github=new Github({token:"2ff060ad1f68fd0a16beb73e608c3853da472737",username: 'minglie'});
 
 
 /**
